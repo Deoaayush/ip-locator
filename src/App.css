@@ -1,0 +1,98 @@
+#container {
+    height: fit-content;
+    width: 100vw;
+    height: 35vh;
+    background-color: black;
+    background-image: url("./assets/map.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ip {
+    width: 320px;
+    height: 56px;
+    border-radius: 8px 0px 0px 8px;
+    padding: 16px 24px;
+}
+
+#ip::placeholder {
+    color: #696969;
+    font-weight: 500;
+}
+
+#search {
+    height: 56px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 4px 16px;
+    background-color: #161616;
+    color: white;
+}
+
+.map-container {
+    width: 100vw;
+    height: 65vh;
+    background: rgb(0, 0, 0);
+}
+
+/* css filter for changing map color to dark theme */
+/* .leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+} */
+
+
+/* Info part */
+#info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    transform: translateX(-50%);
+    z-index: 999;
+    padding: 24px 4px 24px 4px;
+}
+
+.data-area {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 24px;
+}
+
+.data-area:not(:first-child) {
+    border-left: 1px solid #8e8e8e;
+}
+
+.data-title {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #696969;
+}
+
+.data-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #161616;
+    font-family: 'Montserrat', sans-serif;
+}
